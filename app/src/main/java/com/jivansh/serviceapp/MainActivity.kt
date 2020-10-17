@@ -16,16 +16,11 @@ class MainActivity : AppCompatActivity() {
         setContent {
             ServiceAppTheme {
                 Surface(color = MaterialTheme.colors.background) {
-                    Greeting("Android")
+                    AppBar()
                 }
             }
         }
     }
-}
-
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
 }
 
 @Preview(showBackground = true)
@@ -33,7 +28,7 @@ fun Greeting(name: String) {
 fun DefaultPreview() {
     ServiceAppTheme {
         Surface(color = MaterialTheme.colors.background) {
-            Greeting("Android")
+            AppBar()
         }
     }
 }
