@@ -45,29 +45,27 @@ fun DefaultServiceAppTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: 
     )
 }
 
-private val background = Color(0xff000000)
-private val mainCard = Color(0xffF5F5FD)
-private val hint = Color(0xffABAFB8)
-private val shadowButtons = Color(0xffF7F7F7)
-private val stars = Color(0xffFDE61C)
-private val bottomToggle = Color(0xffDFE1F0)
+private val black700 = Color(0xff000000)
+private val white200 = Color(0xffF5F5FD)
+private val grey200 = Color(0xffABAFB8)
+private val grey300 = Color(0xffF7F7F7)
+private val yellow700 = Color(0xffFDE61C)
+private val grey400 = Color(0xffDFE1F0)
 
 
-private val ColorPallete = darkColors(
-    background = background,
-    primary = mainCard,
-    secondary = hint,
-    error = stars,
-    primaryVariant = shadowButtons,
-    surface = bottomToggle
+private val ColorPalette = darkColors(
+    background = black700,
+    primary = white200,
+    secondary = grey200,
+    error = yellow700,
+    primaryVariant = grey300,
+    surface = grey400
 )
 
 @Composable
-fun ServiceAppTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable() () -> Unit){
-    val colors = ColorPallete
-
+fun ServiceAppTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit){
     MaterialTheme(
-        colors = colors,
+        colors = ColorPalette,
         typography = typography,
         shapes = shapes,
         content = content

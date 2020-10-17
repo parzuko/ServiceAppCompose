@@ -32,6 +32,8 @@ fun Greeting(name: String) {
 @Composable
 fun DefaultPreview() {
     ServiceAppTheme {
-        Greeting("Android")
+        Surface(color = MaterialTheme.colors.background) {
+            Greeting("Android")
+        }
     }
 }
