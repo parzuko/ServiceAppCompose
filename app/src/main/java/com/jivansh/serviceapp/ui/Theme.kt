@@ -29,30 +29,6 @@ private val LightColorPalette = lightColors(
     */
 )
 
-@Composable
-fun DefaultServiceAppTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable() () -> Unit) {
-    val colors = if (darkTheme) {
-        DarkColorPalette
-    } else {
-        LightColorPalette
-    }
-
-    MaterialTheme(
-            colors = colors,
-            typography = typography,
-            shapes = shapes,
-            content = content
-    )
-}
-
-private val black700 = Color(0xff000000)
-private val white200 = Color(0xffF5F5FD)
-private val grey200 = Color(0xffABAFB8)
-private val grey300 = Color(0xffF7F7F7)
-private val yellow700 = Color(0xffFDE61C)
-private val grey400 = Color(0xffDFE1F0)
-
-
 private val ColorPalette = darkColors(
     background = black700,
     primary = white200,

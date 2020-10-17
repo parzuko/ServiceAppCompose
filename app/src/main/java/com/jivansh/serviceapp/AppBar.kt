@@ -20,31 +20,33 @@ import com.jivansh.serviceapp.ui.ServiceAppTheme
 
 @Composable
 fun AppBar(){
-    TopAppBar(
-        backgroundColor = MaterialTheme.colors.background,
-        modifier = Modifier.fillMaxWidth().height(90.dp),
-    ) {
-        Row(
-            modifier = Modifier.padding(8.dp).fillMaxWidth().fillMaxHeight(),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.SpaceBetween
+    Surface(color = MaterialTheme.colors.background) {
+        TopAppBar(
+            backgroundColor = MaterialTheme.colors.background,
+            modifier = Modifier.fillMaxWidth().height(90.dp),
         ) {
-            IconButton(onClick = {}){
-                Icon(Icons.Filled.Menu.copy(defaultHeight = 40.dp, defaultWidth = 40.dp))
-            }
-            Image(
-                modifier = Modifier
-                    .width(55.dp)
-                    .height(55.dp)
-                    .border(
-                        border = BorderStroke(1.dp, color = Color.White),
-                        shape = CircleShape
-                    ).clip(shape = CircleShape)
-                    .background(color = Color.White)
-                    .padding(8.dp),
-                asset = imageResource(id = R.drawable.man),
+            Row(
+                modifier = Modifier.padding(8.dp).fillMaxWidth().fillMaxHeight(),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                IconButton(onClick = {}){
+                    Icon(Icons.Filled.Menu.copy(defaultHeight = 40.dp, defaultWidth = 40.dp))
+                }
+                Image(
+                    modifier = Modifier
+                        .width(55.dp)
+                        .height(55.dp)
+                        .border(
+                            border = BorderStroke(1.dp, color = Color.White),
+                            shape = CircleShape
+                        ).clip(shape = CircleShape)
+                        .background(color = Color.White)
+                        .padding(8.dp),
+                    asset = imageResource(id = R.drawable.man),
 
-            )
+                    )
+            }
         }
     }
 }
