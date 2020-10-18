@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
                 Surface(color = MaterialTheme.colors.background) {
                     Column {
                         AppBar()
-                        Body()
+                        BodyLayout()
                     }
                 }
             }
@@ -35,7 +35,7 @@ fun DefaultPreview() {
         Surface(color = MaterialTheme.colors.background) {
             Column {
                 AppBar()
-                Body()
+                BodyLayout()
             }
         }
     }

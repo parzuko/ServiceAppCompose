@@ -18,6 +18,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.unit.dp
 import com.jivansh.serviceapp.ui.ServiceAppTheme
+import com.jivansh.serviceapp.ui.StarShape
+import com.jivansh.serviceapp.ui.TriangleShape
 import com.jivansh.serviceapp.ui.shade
 
 @Composable
@@ -47,8 +49,9 @@ fun InfoCard(){
 
                             )
                     Spacer(modifier = Modifier.padding(8.dp))
-                    Column() {
+                    Column {
                         Text(text = "Mason Greenwood", style = MaterialTheme.typography.subtitle1, color = MaterialTheme.colors.background)
+                            StarRow()
                     }
 
                 }
@@ -56,6 +59,21 @@ fun InfoCard(){
 
     }
 
+}
+
+@Composable
+fun StarRow(){
+    Row {
+        StarShape()
+        Spacer(modifier = Modifier.padding(2.dp))
+        StarShape()
+        Spacer(modifier = Modifier.padding(2.dp))
+        StarShape()
+        Spacer(modifier = Modifier.padding(2.dp))
+        StarShape()
+        Spacer(modifier = Modifier.padding(2.dp))
+        StarShape()
+    }
 }
 
 @Preview
