@@ -3,7 +3,9 @@ package com.jivansh.serviceapp
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.Text
+import androidx.compose.foundation.layout.Column
 import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Scaffold
 import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.setContent
@@ -16,7 +18,10 @@ class MainActivity : AppCompatActivity() {
         setContent {
             ServiceAppTheme {
                 Surface(color = MaterialTheme.colors.background) {
-                    AppBar()
+                    Column {
+                        AppBar()
+                        Body()
+                    }
                 }
             }
         }
@@ -28,7 +33,10 @@ class MainActivity : AppCompatActivity() {
 fun DefaultPreview() {
     ServiceAppTheme {
         Surface(color = MaterialTheme.colors.background) {
-            AppBar()
+            Column {
+                AppBar()
+                Body()
+            }
         }
     }
 }

@@ -43,7 +43,7 @@ fun ServiceAppTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Compos
     MaterialTheme(
         colors = ColorPalette,
         typography = typography,
-        shapes = shapes,
+        shapes = ServiceAppShapes,
         content = content
     )
 }
