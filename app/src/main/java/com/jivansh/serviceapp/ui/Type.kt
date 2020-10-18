@@ -63,7 +63,7 @@ val ServiceTypography = Typography(
         ),
         h6 = TextStyle(
                 fontFamily = OpenSans,
-                fontWeight = FontWeight.W600,
+                fontWeight = FontWeight.Normal,
                 fontSize = 20.sp
         ),
         subtitle1 = TextStyle(

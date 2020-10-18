@@ -28,14 +28,16 @@ fun BodyLayout(){
 private fun BodyContent(){
     Column(
             modifier = Modifier
-                    .padding(16.dp)
+                    .padding(10.dp)
                     .fillMaxWidth()
                     .fillMaxHeight()
                     .wrapContentHeight(),
-            horizontalAlignment = Alignment.CenterHorizontally,
     ) {
-        Text(modifier = Modifier.align(Alignment.CenterHorizontally),
-                text = "Hi Jivansh", style = MaterialTheme.typography.h1, color = MaterialTheme.colors.background)
+        Text(text = "Hi Jivansh", style = MaterialTheme.typography.h2, color = MaterialTheme.colors.background)
+        Text(text = "G o o d  M o r n i n g !", style = MaterialTheme.typography.h6, color = MaterialTheme.colors.background)
+        Spacer(modifier = Modifier.padding(8.dp))
+        Text(text = "2 new shipments are available", style = MaterialTheme.typography.body1, color = MaterialTheme.colors.secondary)
+        InfoCard()
     }
 }
 
