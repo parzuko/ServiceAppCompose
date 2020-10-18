@@ -7,6 +7,7 @@ import androidx.compose.foundation.shape.CornerSize
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
 import androidx.compose.material.MaterialTheme
+import androidx.compose.material.OutlinedButton
 import androidx.compose.material.Surface
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Info
@@ -51,7 +52,35 @@ fun InfoCard(){
                     Spacer(modifier = Modifier.padding(8.dp))
                     Column {
                         Text(text = "Mason Greenwood", style = MaterialTheme.typography.subtitle1, color = MaterialTheme.colors.background)
-                            StarRow()
+                        StarRow()
+                        Text(text = "Business place business city", style = MaterialTheme.typography.body2, color = MaterialTheme.colors.secondary)
+                        Text(text = "Weight: 2KG   ", style = MaterialTheme.typography.body2, color = MaterialTheme.colors.secondary)
+
+                        Spacer(modifier = Modifier.padding(8.dp))
+                        Row {
+                            OutlinedButton(
+                                    onClick = {},
+                                    backgroundColor = MaterialTheme.colors.primaryVariant,
+                                    shape = CircleShape,
+                                    contentColor = MaterialTheme.colors.background,
+                                    border = BorderStroke(width = 1.dp, color = MaterialTheme.colors.primaryVariant)
+                            ) {
+                                Text(text = "10:30 pm", style = MaterialTheme.typography.button, color = MaterialTheme.colors.background)
+                            }
+                            Spacer(modifier = Modifier.padding(5.dp))
+                            OutlinedButton(
+                                    onClick = {},
+                                    backgroundColor = MaterialTheme.colors.primaryVariant,
+                                    shape = CircleShape,
+                                    contentColor = MaterialTheme.colors.background,
+                                    border = BorderStroke(width = 1.dp, color = MaterialTheme.colors.primaryVariant)
+                            ) {
+                                Text(text = "7:00 am", style = MaterialTheme.typography.button, color = MaterialTheme.colors.background)
+
+                            }
+                        }
+
+
                     }
 
                 }
@@ -62,7 +91,7 @@ fun InfoCard(){
 }
 
 @Composable
-fun StarRow(){
+private fun StarRow(){
     Row {
         StarShape()
         Spacer(modifier = Modifier.padding(2.dp))

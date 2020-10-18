@@ -87,7 +87,7 @@ val ServiceTypography = Typography(
         ),
         button = TextStyle(
                 fontFamily = OpenSans,
-                fontWeight = FontWeight.W500,
+                fontWeight = FontWeight.W400,
                 fontSize = 14.sp
         ),
         caption = TextStyle(
