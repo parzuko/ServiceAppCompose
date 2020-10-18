@@ -28,10 +28,10 @@ fun Body(){
                     .fillMaxHeight(.95f)
                     .fillMaxWidth()
                     .border(
-                            border = BorderStroke(5.dp, color = Color.White),
+                            border = BorderStroke(5.dp, color = MaterialTheme.colors.primary),
                             shape = MaterialTheme.shapes.small
                     ).clip(shape = MaterialTheme.shapes.small)
-                    .background(color = Color.White)
+                    .background(color =  MaterialTheme.colors.primary)
                     .padding(8.dp),
             )
         }
