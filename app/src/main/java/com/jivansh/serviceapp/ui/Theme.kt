@@ -42,7 +42,7 @@ private val ColorPalette = darkColors(
 fun ServiceAppTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit){
     MaterialTheme(
         colors = ColorPalette,
-        typography = typography,
+        typography = ServiceTypography,
         shapes = ServiceAppShapes,
         content = content
     )

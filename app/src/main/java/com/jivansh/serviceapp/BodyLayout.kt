@@ -30,10 +30,12 @@ private fun BodyContent(){
             modifier = Modifier
                     .padding(16.dp)
                     .fillMaxWidth()
+                    .fillMaxHeight()
                     .wrapContentHeight(),
             horizontalAlignment = Alignment.CenterHorizontally,
     ) {
-        Text(text = "Hi Jivansh", color = MaterialTheme.colors.error,style = MaterialTheme.typography.h1)
+        Text(modifier = Modifier.align(Alignment.CenterHorizontally),
+                text = "Hi Jivansh", style = MaterialTheme.typography.h1, color = MaterialTheme.colors.background)
     }
 }
 
