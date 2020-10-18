@@ -12,7 +12,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import androidx.ui.tooling.preview.Preview
 import com.jivansh.serviceapp.ui.ServiceAppTheme
-import org.intellij.lang.annotations.JdkConstants
+
 
 @Composable
 fun BodyLayout(){
