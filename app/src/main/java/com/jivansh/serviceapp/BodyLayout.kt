@@ -35,6 +35,7 @@ private fun BodyContent(){
                     .fillMaxHeight()
                     .wrapContentHeight(),
     ) {
+        Spacer(modifier = Modifier.padding(50.dp))
         Text(text = "Hi Jivansh", style = MaterialTheme.typography.h2, color = MaterialTheme.colors.background)
         Text(text = "G o o d  M o r n i n g !", style = MaterialTheme.typography.h6, color = MaterialTheme.colors.background)
         Spacer(modifier = Modifier.padding(8.dp))
@@ -44,6 +45,7 @@ private fun BodyContent(){
         Column(modifier = Modifier.fillMaxWidth(.7f).align(Alignment.CenterHorizontally)) {
             TabSwitch()
         }
+        BottomBox()
     }
 }
 

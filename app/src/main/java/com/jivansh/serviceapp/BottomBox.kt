@@ -24,6 +24,10 @@ import com.jivansh.serviceapp.ui.shade
 fun BottomBox(){
     ScrollableColumn() {
         PersonInfo(workerName = "Marcus Rashford",facility = "Goals.Goals.Goals", id = R.drawable.human, time = "6:00 PM")
+        PersonInfo(workerName = "Anthony Martial",facility = "RB + O. Finesse", id = R.drawable.bro, time = "7:00 AM")
+        PersonInfo(workerName = "Paul Pogba",facility = "Fancy FrenchMen", id = R.drawable.bro, time = "10:00 PM")
+        PersonInfo(workerName = "Aaron Wan Bisaka",facility = "Running Wall.", id = R.drawable.human, time = "9:00 AM")
+        PersonInfo(workerName = "Bruno Fernandes",facility = "Leader", id = R.drawable.bro, time = "11:00 PM")
     }
 }
 
