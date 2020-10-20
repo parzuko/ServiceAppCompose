@@ -41,7 +41,7 @@ fun InfoCard(){
                                     .width(55.dp)
                                     .height(55.dp)
                                     .border(
-                                            border = BorderStroke(1.dp, color = Color.White),
+                                            border = BorderStroke(4.dp, color = shade),
                                             shape = CircleShape
                                     ).clip(shape = CircleShape)
                                     .background(color = shade)
